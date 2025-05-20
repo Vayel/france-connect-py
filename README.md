@@ -58,7 +58,7 @@ fc.get_configuration()
 # 
 # The `login_callback_url` provided at instantiation will be used as the
 # callback URL, you can override it using the `callback_url` parameter.
-url, nonce, state = fc.get_authorization_url(acr_values=[ACRValues.EIDAS2])
+url, nonce, state = fc.get_authentication_url(acr_values=[ACRValues.EIDAS2])
 
 
 # The following code must be called when the user is redirected back to the
